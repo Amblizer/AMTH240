@@ -1,0 +1,73 @@
+# Project information
+site_name: SCU AMTH 240 Discrete Mathematics for CS
+site_description: SCU AMTH 240 notes and assignments, with Discrete and Combinatorial Mathematics, Grimaldi.
+site_author: Amblizer
+site_url: https://amblizer.xyz
+
+# Repository
+repo_name: amblizer/COEN279
+repo_url: https://github.com/amblizer/AMTH240
+
+# Copyright
+copyright: '<a href="https://amblizer.xyz">Amblizer</a> &copy; 2018'
+
+# Configuration
+
+theme:
+    name: 'material'
+    language: 'en'
+    # favicon: 'assets/favicon.png'
+    palette:
+        primary: 'indigo'
+        accent: 'teal'
+    font:
+        text: 'Roboto'
+        code: 'Roboto Mono'
+    logo:
+        icon: 'import_contacts'
+
+# Customization
+extra:
+    social:
+        - type: github
+          link: https://github.com/amblizer
+        - type: quote-left
+          link: https://amblizer.xyz
+        - type: linkedin
+          link: https://www.linkedin.com/in/m-zhao
+        # - type: book
+        #   link:
+        # - type: gamepad
+        #   link: 
+        # - type: instagram
+        #   link: 
+  
+extra_javascript:
+    - 'js/mathjax.js'
+    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'
+
+# Google Analytics
+
+
+# Extensions
+markdown_extensions:
+    - codehilite:
+        linenums: true
+    - toc:
+        permalink: false
+    - pymdownx.arithmatex
+    - pymdownx.betterem:
+        smart_enable: all
+    # - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+    - pymdownx.inlinehilite
+    # - pymdownx.magiclink
+    # - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.tilde
