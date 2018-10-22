@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+     <loc>https://amblizer.xyz/</loc>
+     <lastmod>2018-10-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://amblizer.xyz/Exam/Midterm/</loc>
+     <lastmod>2018-10-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://amblizer.xyz/week1/1.note/</loc>
+     <lastmod>2018-10-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://amblizer.xyz/week1/2.assignment/</loc>
+     <lastmod>2018-10-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+</urlset>
