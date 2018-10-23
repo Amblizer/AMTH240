@@ -678,13 +678,47 @@ $$</p>
 <blockquote>
 <p>Let <span><span class="MathJax_Preview">a, b, c, d</span><script type="math/tex">a, b, c, d</script></span> be positive integers. Prove <span><span class="MathJax_Preview">[(a|b)\land(c|d)\Rightarrow ac|bd]</span><script type="math/tex">[(a|b)\land(c|d)\Rightarrow ac|bd]</script></span>.</p>
 </blockquote>
+<div>
+<div class="MathJax_Preview">\begin{align}
+&amp; (1) &amp;&amp; a|b \Rightarrow b = an, n\in \mathbb{Z}    &amp;&amp; \text{ Definition}\\
+&amp; (2) &amp;&amp; c|d \Rightarrow d = cm, m\in \mathbb{Z}    &amp;&amp; \text{ Definition}\\
+&amp; (3) &amp;&amp; bd = (an)(cm) = (ac)(mn), mn\in \mathbb{Z} &amp;&amp; \text{ (1)(2)}\\
+&amp; (4) &amp;&amp; ac|bd                                      &amp;&amp; \text{ (3) definition}\\
+\end{align}</div>
+<script type="math/tex; mode=display">\begin{align}
+& (1) && a|b \Rightarrow b = an, n\in \mathbb{Z}    && \text{ Definition}\\
+& (2) && c|d \Rightarrow d = cm, m\in \mathbb{Z}    && \text{ Definition}\\
+& (3) && bd = (an)(cm) = (ac)(mn), mn\in \mathbb{Z} && \text{ (1)(2)}\\
+& (4) && ac|bd                                      && \text{ (3) definition}\\
+\end{align}</script>
+</div>
 <h3 id="quiz-8">Quiz-8</h3>
 <blockquote>
 <p>Negate and simplify: <span><span class="MathJax_Preview">\forall x\exists y[(p(x, y)\land q(x, y))\rightarrow r(x, y)]</span><script type="math/tex">\forall x\exists y[(p(x, y)\land q(x, y))\rightarrow r(x, y)]</script></span>, 
     use 2 column proof format.</p>
 </blockquote>
+<div>
+<div class="MathJax_Preview">\begin{align}
+\lnot[\forall x\exists y[(    p(x, y) \land q(x, y)) \rightarrow r(x, y)]&amp;]  &amp;&amp;\text{ Negate}\\
+\exists x\lnot[\exists y[(    p(x, y) \land q(x, y)) \rightarrow r(x, y)]&amp;]  &amp;&amp;\text{ Negation of }\forall\\
+\exists x\forall y\lnot[(     p(x, y) \land q(x, y)) \rightarrow r(x, y)]&amp;   &amp;&amp;\text{ Negation of }\exists\\
+\exists x\forall y\lnot[\lnot(p(x, y) \land q(x, y)) \lor        r(x, y)]&amp;   &amp;&amp;\text{ Logically equivalent}\\
+\exists x\forall y[\lnot\lnot(p(x, y) \land q(x, y)) \land \lnot r(x, y)]&amp;   &amp;&amp;\text{ d'Morgan}\\
+\exists x\forall y[(          p(x, y) \land q(x, y)) \land \lnot r(x, y)]&amp;   &amp;&amp;\text{ Double negation}\\
+\end{align}</div>
+<script type="math/tex; mode=display">\begin{align}
+\lnot[\forall x\exists y[(    p(x, y) \land q(x, y)) \rightarrow r(x, y)]&]  &&\text{ Negate}\\
+\exists x\lnot[\exists y[(    p(x, y) \land q(x, y)) \rightarrow r(x, y)]&]  &&\text{ Negation of }\forall\\
+\exists x\forall y\lnot[(     p(x, y) \land q(x, y)) \rightarrow r(x, y)]&   &&\text{ Negation of }\exists\\
+\exists x\forall y\lnot[\lnot(p(x, y) \land q(x, y)) \lor        r(x, y)]&   &&\text{ Logically equivalent}\\
+\exists x\forall y[\lnot\lnot(p(x, y) \land q(x, y)) \land \lnot r(x, y)]&   &&\text{ d'Morgan}\\
+\exists x\forall y[(          p(x, y) \land q(x, y)) \land \lnot r(x, y)]&   &&\text{ Double negation}\\
+\end{align}</script>
+</div>
 <h3 id="quiz-9">Quiz-9</h3>
-<blockquote></blockquote>
+<blockquote>
+<p>n/a</p>
+</blockquote>
                 
                   
                 
