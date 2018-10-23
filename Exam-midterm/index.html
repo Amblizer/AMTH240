@@ -301,8 +301,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#quiz-2s" title="Quiz-2s" class="md-nav__link">
-    Quiz-2s
+  <a href="#quiz-2" title="Quiz-2" class="md-nav__link">
+    Quiz-2
   </a>
   
 </li>
@@ -456,8 +456,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#quiz-2s" title="Quiz-2s" class="md-nav__link">
-    Quiz-2s
+  <a href="#quiz-2" title="Quiz-2" class="md-nav__link">
+    Quiz-2
   </a>
   
 </li>
@@ -543,7 +543,8 @@
     are considered same for example). How many three-letter words that are not equivalent can you 
     make?</p>
 </blockquote>
-<h3 id="quiz-2s">Quiz-2s</h3>
+<p>We can choose 3 items from 26 letters and two spaces, so it's <span><span class="MathJax_Preview">26+2\choose 3</span><script type="math/tex">26+2\choose 3</script></span>, or <span><span class="MathJax_Preview">28\choose 3</span><script type="math/tex">28\choose 3</script></span>.</p>
+<h3 id="quiz-2">Quiz-2</h3>
 <blockquote>
 <p>Provide a 2 column proof: if <span><span class="MathJax_Preview">A \subseteq B</span><script type="math/tex">A \subseteq B</script></span>, then <span><span class="MathJax_Preview">\complement_U{A} \cup B = U</span><script type="math/tex">\complement_U{A} \cup B = U</script></span></p>
 </blockquote>
@@ -609,9 +610,20 @@ Therefore Harry does not do magic out side of school and Hermione isn't a wizard
 </div>
 <h3 id="quiz-4">Quiz-4</h3>
 <blockquote>
-<p>How many ways are there to place 10 books on 5 bookshelves,  if the order of books relevant and 
+<p>How many ways are there to place 10 books on 5 bookshelves, if the order of books relevant and 
     (a) shelf can be empty or (b) shelves can be left empty.</p>
 </blockquote>
+<p>Because the order of books relevant, we arrange books first, which is <span><span class="MathJax_Preview">P(10, 5) = 5</span><script type="math/tex">P(10, 5) = 5</script></span>.</p>
+<p>If shelves can be empty, then we are assigning these <span><span class="MathJax_Preview">4</span><script type="math/tex">4</script></span> bars in <span><span class="MathJax_Preview">5</span><script type="math/tex">5</script></span> categories to 
+<span><span class="MathJax_Preview">10+5-1</span><script type="math/tex">10+5-1</script></span> places, which is <span><span class="MathJax_Preview">14\choose 4</span><script type="math/tex">14\choose 4</script></span>, so number of ways are: 
+$$
+P(10, 5) \times {14\choose 4} = \dfrac{10!14!}{5!10!4!} = = \dfrac{14!}{5!4!}
+$$</p>
+<p>If shelves cannot be empty, then we are assigning these <span><span class="MathJax_Preview">4</span><script type="math/tex">4</script></span> bars in <span><span class="MathJax_Preview">5</span><script type="math/tex">5</script></span> categories to 
+<span><span class="MathJax_Preview">10-1</span><script type="math/tex">10-1</script></span> places, which is <span><span class="MathJax_Preview">9\choose 4</span><script type="math/tex">9\choose 4</script></span>, so number of ways are: 
+$$
+P(10, 5) \times {9\choose 4} = \dfrac{10!9!}{5!5!4!}
+$$</p>
 <h3 id="quiz-5">Quiz-5</h3>
 <blockquote>
 <p>How may permutations of the 26 different letters of the alphabet contain the pattern "DOG", 
