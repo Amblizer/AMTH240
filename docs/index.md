@@ -18,7 +18,7 @@ Week | Date | Chapter | Topic
 3 | 2018/10/03 | 3 | Set Theory
 4 | 2018/10/10 | 4 | Number Theory
 5 | 2018/10/17 | - | Review
-6 | 2018/10/24 | - | Midterm
+6 | 2018/10/24 | - | [Midterm][mid]
 7 | 2018/10/31 | 5 | Relations
 8 | 2018/11/07 | 6 | Languages and FSM
 9 | 2018/11/14 | 7 | Relations
@@ -29,3 +29,4 @@ Week | Date | Chapter | Topic
 <!-- link -->
 [dcm]: https://www.amazon.com/Discrete-Combinatorial-Mathematics-Applied-Introduction/dp/0201726343
 [note1]: week1/1.note.md
+[mid]: Exam-midterm.md

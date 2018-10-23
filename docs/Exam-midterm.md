@@ -5,8 +5,11 @@
 
 ### Quiz-1
 
-> Two "words" are considered **equivalent** if one is a rearrangement of the other. (Cat, act and cta are considered same for example). How many three-letter words that are **not equivalent** can you make?
+> Two "words" are considered equivalent if one is a rearrangement of the other. (Cat, act and cta 
+    are considered same for example). How many three-letter words that are not equivalent can you 
+    make?
 
+We can choose 3 items from 26 letters and two spaces, so it's $26+2\choose 3$, or $28\choose 3$.
 
 ### Quiz-2
 
@@ -56,9 +59,22 @@ $s(x)$: $x$ knows how to cast spells.       <br>
 
 ### Quiz-4
 
-> How many ways are there to place 10 books on 5 bookshelves,  if the order of books relevant and 
+> How many ways are there to place 10 books on 5 bookshelves, if the order of books relevant and 
     (a) shelf can be empty or (b) shelves can be left empty.
 
+Because the order of books relevant, we arrange books first, which is $P(10, 5) = 5$.
+
+If shelves can be empty, then we are assigning these $4$ bars in $5$ categories to 
+$10+5-1$ places, which is $14\choose 4$, so number of ways are: 
+$$
+P(10, 5) \times {14\choose 4} = \dfrac{10!14!}{5!10!4!} = = \dfrac{14!}{5!4!}
+$$
+
+If shelves cannot be empty, then we are assigning these $4$ bars in $5$ categories to 
+$10-1$ places, which is $9\choose 4$, so number of ways are: 
+$$
+P(10, 5) \times {9\choose 4} = \dfrac{10!9!}{5!5!4!}
+$$
 
 ### Quiz-5
 
@@ -71,8 +87,9 @@ Individual permutations:
 - "CAT": $C = P(24, 24) = 24!$
 - "MICE":$M = P(23, 23) = 23!$. 
 
-The overall permutations is $C\cup D\cup M$, mind that elements included in each set are partially 
-    overlapping. So in order to eliminate duplications, I use the Venn diagram helping me understand.
+The overall permutations is $C\cup D\cup M$, mind that elements included "DOG" and "CAT", "DOG" and "MICE" 
+are partially overlapping. So in order to eliminate duplications, I use the Venn diagram helping me 
+understand.
     
 ![Credit to MyDraw](AandBandC.png)
 
@@ -85,31 +102,33 @@ Since:
 
 \begin{align}
     C\cap D         &= P(26-6+2, 26-6+2) = P(22, 22) = 22!\\
-    C\cap M         &= P(26-7+2, 26-7+2) = P(21, 21) = 21!\\
+    C\cap M         &= 0\\
     D\cap M         &= P(26-7+2, 26-7+2) = P(21, 21) = 21!\\
-    C\cap D\cap M   &= P(26-10+3, 26-10+3) = P(19, 19) = 19!
+    C\cap D\cap M   &= 0
 \end{align}
 
 So:
 
 \begin{align}
     C\cup D\cup M &= C + D + M - C\cap D - C\cap M - D\cap M + C\cap D\cap M\\
-                  &= 24! + 24! + 23! - 22! - 21! - 21! + 19!
+                  &= 24! + 24! + 22! - 22!
 \end{align}
     
 ### Quiz-6
 
->
+> Prove $S(n): \sum_{i=1}^n f_i^2 = f_nf_{n+1}$ for all $n$, where 
+    $f_0 = 0, f_1 = f_2 = 1, f_{n+2} = f_n + f_{n+1}$.
 
 
 ### Quiz-7
 
->
+> Let $a, b, c, d$ be positive integers. Prove $[(a|b)\land(c|d)\Rightarrow ac|bd]$.
 
 
 ### Quiz-8
 
->
+> Negate and simplify: $\forall x\exists y[(p(x, y)\land q(x, y))\rightarrow r(x, y)]$, 
+    use 2 column proof format.
 
 
 ### Quiz-9
