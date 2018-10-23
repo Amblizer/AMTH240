@@ -124,13 +124,27 @@ So:
 
 > Let $a, b, c, d$ be positive integers. Prove $[(a|b)\land(c|d)\Rightarrow ac|bd]$.
 
+\begin{align}
+& (1) && a|b \Rightarrow b = an, n\in \mathbb{Z}    && \text{ Definition}\\
+& (2) && c|d \Rightarrow d = cm, m\in \mathbb{Z}    && \text{ Definition}\\
+& (3) && bd = (an)(cm) = (ac)(mn), mn\in \mathbb{Z} && \text{ (1)(2)}\\
+& (4) && ac|bd                                      && \text{ (3) definition}\\
+\end{align}
 
 ### Quiz-8
 
 > Negate and simplify: $\forall x\exists y[(p(x, y)\land q(x, y))\rightarrow r(x, y)]$, 
     use 2 column proof format.
 
+\begin{align}
+\lnot[\forall x\exists y[(    p(x, y) \land q(x, y)) \rightarrow r(x, y)]&]  &&\text{ Negate}\\
+\exists x\lnot[\exists y[(    p(x, y) \land q(x, y)) \rightarrow r(x, y)]&]  &&\text{ Negation of }\forall\\
+\exists x\forall y\lnot[(     p(x, y) \land q(x, y)) \rightarrow r(x, y)]&   &&\text{ Negation of }\exists\\
+\exists x\forall y\lnot[\lnot(p(x, y) \land q(x, y)) \lor        r(x, y)]&   &&\text{ Logically equivalent}\\
+\exists x\forall y[\lnot\lnot(p(x, y) \land q(x, y)) \land \lnot r(x, y)]&   &&\text{ d'Morgan}\\
+\exists x\forall y[(          p(x, y) \land q(x, y)) \land \lnot r(x, y)]&   &&\text{ Double negation}\\
+\end{align}
 
 ### Quiz-9
 
->
+> n/a
