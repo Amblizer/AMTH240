@@ -2,11 +2,11 @@
 site_name: SCU AMTH 240 Discrete Mathematics for CS
 site_description: SCU AMTH 240 notes and assignments, with Discrete and Combinatorial Mathematics, Grimaldi.
 site_author: Amblizer
-site_url: https://amblizer.xyz
+site_url: https://amth240.amblizer.xyz
 
 # Repository
-repo_name: amblizer/AMTH240
-repo_url: https://github.com/amblizer/AMTH240
+repo_name: EICamino/AMTH240
+repo_url: https://github.com/EICamino/AMTH240
 
 # Copyright
 copyright: '<a href="https://amblizer.xyz">Amblizer</a> &copy; 2018'
@@ -30,7 +30,7 @@ theme:
 extra:
     social:
         - type: github
-          link: https://github.com/amblizer
+          link: https://github.com/EICamino
         - type: quote-left
           link: https://amblizer.xyz
         - type: linkedin
